@@ -1,7 +1,7 @@
 # Flask-Migrate-Tutorial
 透過 Flask-Migrate-Tutorial  管理資料庫 (database) 📝  
 
-* [Youtube Demo]()   
+* [Youtube Demo](https://youtu.be/-1B4ldgYyGA)   
 
 透過 [Flask-Migrate](https://flask-migrate.readthedocs.io/en/latest/)  管理資料庫 (database)
 
