@@ -65,13 +65,13 @@ python Entity.py db init
 ```
 ![alt tag](http://i.imgur.com/WK2vhKg.jpg)
 
-步驟二 : 先初始化
+步驟二 : migrate
 ``` 
 python Entity.py db migrate
 ```
 ![alt tag](http://i.imgur.com/iCTWKlb.jpg)
 
-步驟三 : 先初始化
+步驟三 : upgrade
 ``` 
 python Entity.py db upgrade
 ```
@@ -87,6 +87,10 @@ python Entity.py db upgrade
 
 ![alt tag](http://i.imgur.com/VtkNV3u.jpg)
 
+假如今天你想要 新增 or 刪除 欄位 或是 修改欄位的型態 ，
+
+修改 Entity.py ， 之後，再重複步驟二以及步驟三即可。
+
 其他說明 :
 
 這裡是使用 SQLITE 當作範例，如果你要換其他的資料庫，請修改這串字串
@@ -96,7 +100,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 
 假如今天我們要使用 PostgreSQL ， 我們就要將這串字串修改為
 ``` 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:PASSWORD@localhost/test'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:PASSWORD@localhost/DB'
 ```
 
 假如今天我們要使用 MySQL ， 我們就要將這串字串修改為
