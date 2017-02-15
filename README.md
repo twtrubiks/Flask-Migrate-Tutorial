@@ -98,7 +98,7 @@ python Entity.py db upgrade
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 ```
 
-假如今天我們要使用 PostgreSQL ， 我們就要將這串字串修改為
+假如今天我們要使用 PostgreSQL ， 我們就要將這串字串修改為 ( 需要額外安裝套件 [psycopg2](http://initd.org/psycopg/) )
 ``` 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:PASSWORD@localhost/DB'
 ```
@@ -109,11 +109,11 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://user:PASSWORD@XX
 ```
 需要安裝套件 [mysql-connector-python](https://github.com/mysql/mysql-connector-python) 
 
-假如今天我們要使用 MSSQL ， 我們就要將這串字串修改為
+假如今天我們要使用 MSSQL ， 我們就要將這串字串修改為 ( 需要額外安裝套件 [pyodbc](https://mkleehammer.github.io/pyodbc/) )
 ``` 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://user:PASSWORD@XXX.XXX.XX.XX/DB?driver=ODBC+Driver+11+for+SQL+Server'
 ```
-需要安裝套件 [pyodbc](https://mkleehammer.github.io/pyodbc/) 
+
 
 ## 操作 db
 
