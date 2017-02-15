@@ -103,11 +103,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:PASSWORD@localhost/DB'
 ```
 
-假如今天我們要使用 MySQL ， 我們就要將這串字串修改為
+假如今天我們要使用 MySQL ， 我們就要將這串字串修改為 ( 需要額外安裝套件 [mysql-connector-python](https://github.com/mysql/mysql-connector-python)  )
 ``` 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://user:PASSWORD@XXX.XXX.XX.XX:3306/DB'
 ```
-需要安裝套件 [mysql-connector-python](https://github.com/mysql/mysql-connector-python) 
 
 假如今天我們要使用 MSSQL ， 我們就要將這串字串修改為 ( 需要額外安裝套件 [pyodbc](https://mkleehammer.github.io/pyodbc/) )
 ``` 
